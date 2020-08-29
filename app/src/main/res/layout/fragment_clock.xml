@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Clock_fragment">
+
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="304dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="64dp"
+        android:textColor="@android:color/white"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/add_country"
+        android:layout_width="62dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="36dp"
+        android:background="#000000"
+        android:contentDescription="@string/add_country"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timescrollview" />
+
+    <ScrollView
+        android:id="@+id/timescrollview"
+        android:layout_width="302dp"
+        android:layout_height="265dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/add_country"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date">
+
+        <LinearLayout
+            android:id="@+id/worldtimelayout"
+            android:layout_width="385dp"
+            android:layout_height="344dp"
+
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="305dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/timescrollview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="302dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="436dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

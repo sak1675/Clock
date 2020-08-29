@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Clock</string>
+    <string name="Settings">Settings</string>
+    <string name="alarm">Alarm</string>
+    <string name="clock">Clock</string>
+    <string name="timer">Timer</string>
+    <string name="stopwatch">Stopwatch</string>
+    <string name="start_timer_btn">start_Timer</string>
+    <string name="Timer">00</string>
+    <string name="Extra">:</string>
+    <string name="extra">:</string>
+    <string name="time_here">time here</string>
+    <string name="STOPWATCH">00:00</string>
+    <string name="stopwatchh">stopwatchh_start</string>
+    <string name="stopwatch_stop">stopwatchh_stop</string>
+    <string name="add_country">Add_country</string>
+    <string name="Time_add">TIME</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_alarm">Add_alarm</string>
+    <string name="set_alarm">set_alarm</string>
+    <string name="add_alarms">alarms</string>
+</resources>
